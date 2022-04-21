@@ -3,12 +3,14 @@ import { useFilteredListState } from '../../store/todoListState'
 import TodoItem from '../TodoItem'
 import TodoItemCreator from '../TodoItemCreator'
 import TodoListFilters from '../TodoListFilters'
+import TodoListStats from '../TodoListStats'
 
 const TodoList = () => {
   const [todoList] = useFilteredListState()
 
   return (
     <>
+      <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
 
